@@ -91,6 +91,23 @@
             width: 100%;
             border-radius: 10px;
         }
+
+        .heart {
+            position: absolute;
+            bottom: -50px; /* Starts below the screen */
+            font-size: 24px;
+            color: #ff4d6d;
+            opacity: 0.6; /* Makes them slightly see-through */
+            animation: floatUp 4s linear forwards;
+            z-index: 1; /* Keeps them in the background behind your white card */
+        }
+
+        @keyframes floatUp {
+            to {
+                transform: translateY(-110vh); /* Moves them all the way to the top */
+                opacity: 0; /* Makes them fade away */
+            }
+        }
     </style>
 </head>
 <body>

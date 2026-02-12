@@ -179,6 +179,7 @@
 
         // When she finally clicks Yes!
         yesBtn.addEventListener('click', () => {
+            document.getElementById('myMusic').play(); // This starts the music!
             questionSection.classList.add('hidden');
             successSection.classList.remove('hidden');
         });
